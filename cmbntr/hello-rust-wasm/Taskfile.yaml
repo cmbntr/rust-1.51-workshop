@@ -1,0 +1,7 @@
+version: '3'
+tasks:
+  default:
+    cmds:
+      - wasm-pack build
+    env:
+      RUSTFLAGS: "-C linker=lld"
